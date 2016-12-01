@@ -38,9 +38,9 @@ namespace SampleRecogServerCSharp
         // recognizerName means the name of this recognizer, and should be unique for each participant team. 
         //     We sugguest you use "recognizer_name@team_name" to name your recognizer.
         //     For example, dog@msr (for dog breed recognition from MSR).
-        static string providerName = "Sample-CSharp";
-        static string providerGuidStr = "843EF294-C635-42DA-9AD8-E79E82F9A357";
-        static string recognizerName = "SampleRecognizer@msr";
+        static string providerName = "DRNfLSCR";
+        static string providerGuidStr = "179ec63b-7a6a-44e7-9806-ebad687258c0";
+        static string recognizerName = "celebrity@DRNfLSCR";
 
         public static SampleRecogInstanceCSharp Current { get; set; }
         public SampleRecogInstanceCSharp() :
@@ -108,7 +108,7 @@ namespace SampleRecogServerCSharp
             // but this step is not necessary if your function can directly process image data in memory
             byte[] imgType = System.Text.Encoding.UTF8.GetBytes("jpg");
             Guid imgID = BufferCache.HashBufferAndType(imgBuf, imgType);
-            string imgFileName = imgID.ToString() + ".jpg";
+            string imgFileName = "images/" + imgID.ToString() + ".jpg";
 
             string filename = Path.Combine( exeDir, imgFileName );
             if (!File.Exists(filename))
