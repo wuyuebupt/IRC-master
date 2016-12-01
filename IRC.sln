@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IRC.Windows.Cmdline", "IRC.Windows.Cmdline", "{EEB8C79D-679E-4713-BCA2-B8D844B19B55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IRC.Windows.DLL", "IRC.Windows.DLL", "{E56414FC-5683-4430-9740-5A6F01A3ADF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRC.SampleRecogCmdlineCSharp", "IRC.Windows.Call.Cmdline\IRC.SampleRecogCmdlineCSharp\IRC.SampleRecogCmdlineCSharp.csproj", "{068B8E51-EBF4-4A2B-958F-6E897FA221E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRC.SampleRecogServerCSharp", "IRC.Windows.Call.Cmdline\IRC.SampleRecogServerCSharp\IRC.SampleRecogServerCSharp.csproj", "{1A0C8233-828E-40EF-8A00-B19C726A0240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRC.SampleRecogServerCSharp", "IRC.Windows.Call.DLL\IRC.SampleRecogServerCSharp\IRC.SampleRecogServerCSharp.csproj", "{8ABBF483-7E0E-4653-B8B2-D8A6C7A2F709}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EEE28CEF-FC8F-4337-B89B-D5871BF0C676} = {EEE28CEF-FC8F-4337-B89B-D5871BF0C676}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageClassifierLib", "IRC.Windows.Call.DLL\ImageClassifierLib\ImageClassifierLib.vcxproj", "{CA538C0A-4212-4871-B2C6-FBD065DF3C57}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageClassifierDllWrapper", "IRC.Windows.Call.DLL\ImageClassifierDllWrapper\ImageClassifierDllWrapper.vcxproj", "{EEE28CEF-FC8F-4337-B89B-D5871BF0C676}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA538C0A-4212-4871-B2C6-FBD065DF3C57} = {CA538C0A-4212-4871-B2C6-FBD065DF3C57}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRC.SampleRecogServerCSharp.Linux", "IRC.Linux\IRC.SampleRecogServerCSharp.Linux\IRC.SampleRecogServerCSharp.Linux.csproj", "{D8FAEE40-92DD-4881-8F23-D985246C295F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IRC.Linux", "IRC.Linux", "{1C52036A-60A6-4AAD-863D-6BE09398BF8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{068B8E51-EBF4-4A2B-958F-6E897FA221E4}.Debug|x64.ActiveCfg = Debug|x64
+		{068B8E51-EBF4-4A2B-958F-6E897FA221E4}.Debug|x64.Build.0 = Debug|x64
+		{068B8E51-EBF4-4A2B-958F-6E897FA221E4}.Release|x64.ActiveCfg = Release|x64
+		{068B8E51-EBF4-4A2B-958F-6E897FA221E4}.Release|x64.Build.0 = Release|x64
+		{1A0C8233-828E-40EF-8A00-B19C726A0240}.Debug|x64.ActiveCfg = Debug|x64
+		{1A0C8233-828E-40EF-8A00-B19C726A0240}.Debug|x64.Build.0 = Debug|x64
+		{1A0C8233-828E-40EF-8A00-B19C726A0240}.Release|x64.ActiveCfg = Release|x64
+		{1A0C8233-828E-40EF-8A00-B19C726A0240}.Release|x64.Build.0 = Release|x64
+		{8ABBF483-7E0E-4653-B8B2-D8A6C7A2F709}.Debug|x64.ActiveCfg = Debug|x64
+		{8ABBF483-7E0E-4653-B8B2-D8A6C7A2F709}.Debug|x64.Build.0 = Debug|x64
+		{8ABBF483-7E0E-4653-B8B2-D8A6C7A2F709}.Release|x64.ActiveCfg = Release|x64
+		{8ABBF483-7E0E-4653-B8B2-D8A6C7A2F709}.Release|x64.Build.0 = Release|x64
+		{CA538C0A-4212-4871-B2C6-FBD065DF3C57}.Debug|x64.ActiveCfg = Debug|x64
+		{CA538C0A-4212-4871-B2C6-FBD065DF3C57}.Debug|x64.Build.0 = Debug|x64
+		{CA538C0A-4212-4871-B2C6-FBD065DF3C57}.Release|x64.ActiveCfg = Release|x64
+		{CA538C0A-4212-4871-B2C6-FBD065DF3C57}.Release|x64.Build.0 = Release|x64
+		{EEE28CEF-FC8F-4337-B89B-D5871BF0C676}.Debug|x64.ActiveCfg = Debug|x64
+		{EEE28CEF-FC8F-4337-B89B-D5871BF0C676}.Debug|x64.Build.0 = Debug|x64
+		{EEE28CEF-FC8F-4337-B89B-D5871BF0C676}.Release|x64.ActiveCfg = Release|x64
+		{EEE28CEF-FC8F-4337-B89B-D5871BF0C676}.Release|x64.Build.0 = Release|x64
+		{D8FAEE40-92DD-4881-8F23-D985246C295F}.Debug|x64.ActiveCfg = Debug|x64
+		{D8FAEE40-92DD-4881-8F23-D985246C295F}.Debug|x64.Build.0 = Debug|x64
+		{D8FAEE40-92DD-4881-8F23-D985246C295F}.Release|x64.ActiveCfg = Release|x64
+		{D8FAEE40-92DD-4881-8F23-D985246C295F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{068B8E51-EBF4-4A2B-958F-6E897FA221E4} = {EEB8C79D-679E-4713-BCA2-B8D844B19B55}
+		{1A0C8233-828E-40EF-8A00-B19C726A0240} = {EEB8C79D-679E-4713-BCA2-B8D844B19B55}
+		{8ABBF483-7E0E-4653-B8B2-D8A6C7A2F709} = {E56414FC-5683-4430-9740-5A6F01A3ADF6}
+		{CA538C0A-4212-4871-B2C6-FBD065DF3C57} = {E56414FC-5683-4430-9740-5A6F01A3ADF6}
+		{EEE28CEF-FC8F-4337-B89B-D5871BF0C676} = {E56414FC-5683-4430-9740-5A6F01A3ADF6}
+		{D8FAEE40-92DD-4881-8F23-D985246C295F} = {1C52036A-60A6-4AAD-863D-6BE09398BF8E}
+	EndGlobalSection
+EndGlobal
